@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './../images/abta.svg'
-import travel from './../images/travel.svg'
+import logo from '../images/abta.svg'
+import travel from '../images/travel.svg'
 
 function Logobar() {
     return (
