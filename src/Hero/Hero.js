@@ -1,32 +1,36 @@
 import React from 'react';
-// Initialization for ES Users
-import { Carousel } from "@material-tailwind/react";
-import greece from './../images/images.jpeg'
+import './Hero.css';
+import image  from "./../images/images.jpeg";
 
 function Hero() {
-  return (
-    <section class="mb-40">
-    <div class="bg-neutral-50 px-6 py-12 text-centermd:px-12 lg:text-left">
-        <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
-        <div class="grid items-center gap-12 lg:grid-cols-2">
-            <div class="mt-12 lg:mt-0">
-            <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-                The best offer <br /><span class="text-primary">for your business</span>
-            </h1>
-            <a class="mb-2 inline-block rounded bg-primary px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] md:mr-2 md:mb-0"
-                data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Get started</a>
-            <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-800 dark:hover:bg-opacity-60"
-                data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Learn more</a>
-            </div>
-            <div class="mb-12 lg:mb-0">
-            <img src={greece}
-                class="w-full rounded-lg shadow-lg dark:shadow-black/20"  loading="lazy" alt="" />
-            </div>
-        </div>
-        </div>
-    </div>
+    return (
+<section>
+	<div class="bg-black text-white py-20">
+		<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+			<div class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
+				<h1 class="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">TechFest</h1>
+				<h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Space : The Timeless Infinity
+				</h2>
+				<p class="text-sm md:text-base text-gray-50 mb-4">Explore your favourite events and
+					register now to showcase your talent and win exciting prizes.</p>
+				<a href="#"
+					class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
+					Explore Now</a>
+			</div>
+			<div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
+				<div class="h-48 flex flex-wrap content-center">
+					<div>
+						<img class="inline-block mt-28 hidden xl:block" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"/></div>
+						<div>
+							<img class="inline-block mt-24 md:mt-0 p-8 md:p-0"  src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"/></div>
+							<div>
+								<img class="inline-block mt-28 hidden lg:block" src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"/></div>
+							</div>
+						</div>
+					</div>
+				</div>
 </section>
-  );
+      );
 }
 
 export default Hero;
