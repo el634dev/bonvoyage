@@ -1,3 +1,4 @@
+// Card Component
 import React from 'react';
 
 function Card() {
@@ -12,8 +13,8 @@ function Card() {
          <div class="w-full md:w-1/2 xl:w-1/3 px-4">
             <div class="bg-white rounded-lg overflow-hidden mb-10">
                <img
-                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-01.jpg"
-                  alt="image"
+                  src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG9reW98ZW58MHx8MHx8fDA%3D"
+                  alt=""
                   class="w-full"
                   loading='lazy'
                   />
@@ -38,7 +39,7 @@ function Card() {
                      </a>
                   </h3>
                   <p class="text-base text-body-color leading-relaxed mb-7">
-                    `Tokyo is located in the heart of Japan, one of the most famous in the world.
+                    Tokyo is located in the center and heart of Japan, one of the most famous cities in the world. Know for futuristic locations.
                   </p>
                   <a
                      href="#"
@@ -59,11 +60,12 @@ function Card() {
                </div>
             </div>
          </div>
+         {/* Card 2 */}
          <div class="w-full md:w-1/2 xl:w-1/3 px-4">
             <div class="bg-white rounded-lg overflow-hidden mb-10">
                <img
-                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-02.jpg"
-                  alt="image"
+                  src="https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNhbnRvcmluaXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt=""
                   class="w-full"
                   />
                <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
@@ -108,12 +110,14 @@ function Card() {
                </div>
             </div>
          </div>
+         {/* Card 3 */}
          <div class="w-full md:w-1/2 xl:w-1/3 px-4">
             <div class="bg-white rounded-lg overflow-hidden mb-10">
                <img
-                  src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-03.jpg"
-                  alt="image"
+                  src="https://images.unsplash.com/photo-1612698093158-e07ac200d44e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW1hbGZpfGVufDB8fDB8fHww"
+                  alt=""
                   class="w-full"
+                  loading='lazy'
                   />
                <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                   <h3>
@@ -132,12 +136,11 @@ function Card() {
                         hover:text-primary
                         "
                         >
-                     Creative Card Component designs graphic elements
+                     Amalfi
                      </a>
                   </h3>
                   <p class="text-base text-body-color leading-relaxed mb-7">
-                     Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                     elit. Lorem consectetur adipiscing elit.
+                     Located along the coastline of Amalif Coast in Italy. Know for picturesque views and locations.
                   </p>
                   <a
                      href="#"
@@ -153,15 +156,20 @@ function Card() {
                      transition
                      "
                      >
-                  View Details
+                  Explore
                   </a>
                </div>
             </div>
          </div>
+         <button>
+               <a href="#" class="text-center text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
+                  VIEW MORE TOURS
+               </a>
+         </button>
       </div>
    </div>
 </section>
-        </div>
+</div>
     );
 }
 

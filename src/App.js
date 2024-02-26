@@ -6,6 +6,7 @@ import Logobar from "./Navbar/Logobar";
 import Hero from "./Hero/Hero";
 import Footer from "./Footer/Footer";
 import Card from "./Card/Card";
+import Search from "./Hero/Search";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Logobar />
       <Hero />
+      <Search />
       <Card />
       <Footer />
     </div>
