@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+// import Popup from 'reactjs-popup';
 
 function Navbar() {
+    const [isOpen, setIsOpen ] = useState(false);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <div>
             <nav class="flex items-center justify-between flex-wrap bg-blue-600 p-6">
@@ -35,12 +41,30 @@ function Navbar() {
                         </a>
                     </div>
                     {/******************/}
-                    <div>
-                      <button>
-                            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
-                                CONTACT
-                            </a>
-                      </button>
+                    <div className="relative">
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            class="text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+                        >
+                            CONTACT
+                        </button>
+                        {isOpen && (
+                            <form onSubmit={handleSubmit} class="absolute text-sm px-4 py-2 rounded text-black border-transparent hover:border-transparent hover:text-teal-500 bg-white hover:bg-white mt-4 lg:mt-0">
+                                <label class="block">
+                                    Name:
+                                    <input type="text" id="name" name="name" class="border w-full p-2 mt-1" required />
+                                </label>
+                                <label class="block mt-2">
+                                    Email:
+                                    <input type="email" id="email" name="email" class="border w-full p-2 mt-1" required />
+                                </label>
+                                <label class="block mt-2">
+                                    Message:
+                                    <textarea id="message" name="message" class="border w-full p-2 mt-1" required />
+                                </label>
+                                <button type="submit" class="bg-blue-500 text-white px-2 py-1 rounded mt-2">Submit</button>
+                            </form>
+                        )}
                     </div>
                 </div>
                 {/******************/}
