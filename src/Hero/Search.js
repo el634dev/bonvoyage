@@ -58,12 +58,14 @@ function Search() {
             <label htmlFor="">Destinations</label>
             <select className="border rounded-md p-2 cursor-pointer">
               <option value="">Toyko</option>
-              <option value="">Key West</option>
+              <option value="">London</option>
               <option value="">Amalfi</option>
-              <option value="">Maldives</option>
+              <option value="">Paris</option>
               <option value="">Curaçao</option>
               <option value="">Santorini</option>
               <option value="">Barbados</option>
+              <option value="">Bahamas</option>
+              <option value="">Dublin</option>
             </select>
           </div>
           {/* Check-in & Check-out */}
@@ -84,7 +86,7 @@ function Search() {
           {/* Rates Button */}
           <div>
             <button className="w-full my-4 cursor-pointer">
-              <a href='' class="inline-block text-sm px-4 py-3 bg-blue-600 leading-none border rounded text-white hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">
+              <a href='#' class="inline-block text-sm px-4 py-3 bg-blue-600 leading-none border rounded text-white hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">
                 BOOK NOW
               </a>
             </button>

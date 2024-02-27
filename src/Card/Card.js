@@ -1,5 +1,6 @@
 // Card Component
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Card() {
     return (
@@ -164,11 +165,11 @@ function Card() {
                </div>
                {/* View More Button */}
                <div class='container py-10 px-10 mx-0 min-w-full grid place-items-center'>
-                  <button>
-                        <a href="#" class="text-center text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
-                           VIEW MORE TOURS
-                        </a>
-                  </button>
+                    <button>
+                        <Link to="travel" class="text-center text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">
+                              VIEW MORE
+                        </Link>
+                    </button>
                </div>
          </div>
    </div>
