@@ -4,7 +4,7 @@
 [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 
-> Web Application where users can see different vacation packages
+> Web Application where users can see different vacation packages and destinations around the world
 >> Live demo [_here_](https://bonvoyage-six.vercel.app/).
 
 ## Table of Contents
